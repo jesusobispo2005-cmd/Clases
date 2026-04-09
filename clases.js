@@ -34,7 +34,7 @@ export class clase_constructor{
 // enviar parametros a los metodos
 
 export class alumnos{
-
+    // los metodos pueden recibir parametros de la misma manera que una funcion recibe parametros, esto va desde 0 parametros hasta X cantidad de parametros (igual que una funcion)
     alumnoA(nombre){
         console.log(`hola ${nombre}`)
     }
@@ -43,4 +43,19 @@ export class alumnos{
         console.log(`hola ${nombreA} y hola ${nombreB}`)
 
     }
+}
+
+
+// herencia
+
+export class padre{
+
+    casa(nombre){
+        console.log(`${nombre} vive en esta casa`)
+    }
+}
+
+// para usar herencia decimos que el hijo exteniende (extends) del padre, al hacer esto durante el uso puede hacer uso de los metodos y propiedades del padre
+export class hijo extends padre{
+
 }

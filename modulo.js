@@ -1,4 +1,4 @@
-import {clase, clase_constructor, alumnos} from './clases.js'
+import {clase, clase_constructor, alumnos, padre, hijo} from './clases.js'
 // le asignamos la clase a una variable usando la palabra "new" antes del nombre de la clase
 // al asignarle "new <nombre de la clase>" se esta creando un objeto independiente a una variable
 // cada que hagamos esta declaracion a una variable nueva, cada variable nueva representa un objeto independiente con las mismas caracteristicas, asi como cuando todos compran el mismo modelo de telefono, son objetos independientes que hacen lo mismo, pero lo que se haga en uno no afecta a los demas
@@ -31,3 +31,16 @@ const todo_bien=new alumnos()
 
 todo_bien.alumnoA("melina")
 todo_bien.alumnoB("jesus", "jaume")
+
+
+// herencia //////////////////
+
+
+const viviendo= new padre()
+
+viviendo.casa("fernando")
+
+// aunque el hijo no posee el metodo del padre, al ser este una extension del padre este puede hacer uso de todos sus metodos y propiedades
+const heredero= new hijo();
+
+heredero.casa("carlos")
