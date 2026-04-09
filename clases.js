@@ -29,3 +29,18 @@ export class clase_constructor{
         console.log(`${this.nombre} pasa adelante`)
     }
 }
+
+
+// enviar parametros a los metodos
+
+export class alumnos{
+
+    alumnoA(nombre){
+        console.log(`hola ${nombre}`)
+    }
+
+    alumnoB(nombreA, nombreB){
+        console.log(`hola ${nombreA} y hola ${nombreB}`)
+
+    }
+}
