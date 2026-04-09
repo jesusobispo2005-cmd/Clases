@@ -59,3 +59,44 @@ export class padre{
 export class hijo extends padre{
 
 }
+
+
+// polimofismo
+
+export class madre{
+
+    casa(nombre){
+        console.log(`${nombre} vive aca`)
+
+    }
+}
+
+export class hija extends madre{
+
+    casa(nombre){
+        console.log(`${nombre} no vive aca`)
+
+    }
+}
+
+export class nieto extends hija{
+
+    casa(nombre){
+        console.log(`el nieto ${nombre} vive aqui`)
+    }
+}
+
+
+// callback
+export class recibidor {
+    constructor(ClaseReferencia) {
+        // 'ClaseReferencia' es el molde (la clase Padre)
+        // Usamos 'new' para crear una instancia real dentro de esta clase
+        this.instancia_callback = new ClaseReferencia();
+    }
+
+    casa_callback(nombre) {
+        // Invocamos el método 'casa' de la instancia que creamos arriba, instancia que viene en representacion de la clase llamada"padre"
+        this.instancia_callback.casa(nombre);
+    }
+}
